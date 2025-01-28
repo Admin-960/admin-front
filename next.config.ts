@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+	reactStrictMode: true,
+	poweredByHeader: false,
+	async rewrites() {
+		return [
+			{
+				source: '/uploads/:path*',
+				destination: `${process.env.SERVER_URL}/uploads/:path*`
+			}
+		]
+	},
+	sassOptions: {
+		silenceDeprecations: ['legacy-js-api']
+	}
+}
+export default nextConfig
