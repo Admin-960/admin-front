@@ -7,6 +7,8 @@ export const COLORS = {
 	primary: '#E30B13',
 	black: colors.black,
 	white: colors.white,
+	bgColor: bgColor,
+	accentColor: accentColor,
 	gray: {
 		300: '#d9dae8',
 		500: '#999AA5',
