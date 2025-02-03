@@ -1,5 +1,9 @@
-import { gql, useQuery } from '@apollo/client'
+import { WrapperMain } from './main/WrapperMain'
 
 export default async function Home() {
-	return <section>Home</section>
+	return (
+		<section>
+			<WrapperMain />
+		</section>
+	)
 }

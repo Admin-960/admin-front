@@ -1,5 +1,7 @@
 export interface IUser {
-	email: string
 	id: string
-	name?: string
+	email: string
+	username: string
+	isVerified: boolean
+	role: string
 }
