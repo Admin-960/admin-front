@@ -1,4 +1,4 @@
-export const API_URL = 'http://localhost:4200/api'
+export const API_URL = 'http://localhost:4200'
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 export const IS_SERVER = typeof window === 'undefined'
